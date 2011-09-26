@@ -1,0 +1,9 @@
+# Ignore xcode project files
+project.xcworkspace/
+xcuserdata/
+
+# Ignore Finder data
+.DS_Store
+
+# Ignore Python Compiled Files
+*.pyc

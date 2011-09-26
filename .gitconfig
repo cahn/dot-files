@@ -1,0 +1,21 @@
+#
+# This is the config file, and
+# a '#' or ';' character indicates
+# a comment
+#
+; core variables
+[core]
+        excludesfile = ~/.gitignore
+[user]
+	name = Charles T. Ahn
+	email = cahn@charlesahn.com
+[branch]
+	autosetupmerge = true
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+[merge]
+	tool = opendiff
+	summary = true
