@@ -8,6 +8,7 @@ ln -sf /dev/null ~/.bash_history
 ln -sf /dev/null ~/.lesshst
 ln -sf /dev/null ~/.gdb_history
 ln -sf /dev/null ~/.gnuplot_history
+ln -sf /dev/null ~/.viminfo
 
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
 source ~/.bashrc
