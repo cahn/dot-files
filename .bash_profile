@@ -15,7 +15,6 @@ source ~/.profile
 source ~/.git-completion.bash
 
 /bin/rm -f -r ~/Library/Preferences/Macromedia/Flash\ Player/macromedia.com/support/flashplayer/sys/*
-/bin/rm -f ~/.viminfo
 
 echo Bash Version: $BASH_VERSION
 echo REMINDERS:
