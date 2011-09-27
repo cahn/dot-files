@@ -8,14 +8,14 @@ ln -sf /dev/null ~/.bash_history
 ln -sf /dev/null ~/.lesshst
 ln -sf /dev/null ~/.gdb_history
 ln -sf /dev/null ~/.gnuplot_history
-ln -sf /dev/null ~/.viminfo
 
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
 source ~/.bashrc
 source ~/.profile
 source ~/.git-completion.bash
 
-/bin/rm -r ~/Library/Preferences/Macromedia/Flash\ Player/macromedia.com/support/flashplayer/sys/*
+/bin/rm -f -r ~/Library/Preferences/Macromedia/Flash\ Player/macromedia.com/support/flashplayer/sys/*
+/bin/rm -f ~/.viminfo
 
 echo Bash Version: $BASH_VERSION
 echo REMINDERS:
