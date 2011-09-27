@@ -5,6 +5,7 @@ alias man="man -M $MANPATH:/opt/local/man"
 
 # Linking the bash_history file to null just in case
 ln -sf /dev/null ~/.bash_history
+ln -sf /dev/null ~/.lesshst
 ln -sf /dev/null ~/.gdb_history
 ln -sf /dev/null ~/.gnuplot_history
 
