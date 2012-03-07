@@ -24,6 +24,7 @@ echo "  openssl enc -aes-256-cbc -a -salt -in file.txt -out file.enc"
 echo "  openssl enc -d -aes-256-cbc -a -in file.enc"
 echo "  fs_usage -w -f filesys mdworker | egrep \"open\""
 echo "  patch -p1 < ~/patch.txt"
+echo "  ls ~/.ssh/*.pub | xargs -L 1 ssh-keygen -l -f"
 echo  
 
 # MacPorts Installer addition on 2009-08-29_at_22:02:32: adding an appropriate PATH variable for use with MacPorts.
