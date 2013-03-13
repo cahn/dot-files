@@ -2,6 +2,7 @@ alias rm='rm -i'
 alias ls="ls -G -A -h"
 alias vim="vim -i NONE"
 alias man="man -M $MANPATH:/opt/local/man"
+alias symbolicatecrash="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks/DTDeviceKit.framework/Versions/A/Resources/symbolicatecrash"
 
 # Linking the bash_history file to null just in case
 ln -sf /dev/null ~/.bash_history
