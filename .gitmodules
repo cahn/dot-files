@@ -1,3 +1,6 @@
 [submodule "clang_complete"]
 	path = clang_complete
 	url = git@github.com:Rip-Rip/clang_complete.git
+[submodule "vim_plugins/ctrlp.vim"]
+	path = vim_plugins/ctrlp.vim
+	url = git@github.com:kien/ctrlp.vim.git

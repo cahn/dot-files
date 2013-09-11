@@ -46,3 +46,6 @@ map L $
 cab o find 
 
 :nmap <Space> i_<Esc>r
+
+" Plugins
+set runtimepath^=~/.vim/bundle/ctrlp.vim
