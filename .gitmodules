@@ -1,0 +1,3 @@
+[submodule "clang_complete"]
+	path = clang_complete
+	url = git@github.com:Rip-Rip/clang_complete.git
