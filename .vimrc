@@ -5,6 +5,8 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
+set backspace=indent,eol,start
+
 syntax enable
 filetype on
 filetype plugin on
