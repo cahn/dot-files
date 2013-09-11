@@ -15,6 +15,7 @@ filetype indent on
 " Below are my own preferences from http://items.sjbach.com/319/configuring-vim-right
 runtime macros/matchit.vim " % will now switch from ( to ), { to }, xml tags, if/elif/else/end, and more! 
 
+set wildmenu
 set wildmode=list:longest " Sets command completion to behave like bashes
 
 set hidden " Sets hidden buffers
