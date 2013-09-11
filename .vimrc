@@ -32,12 +32,22 @@ set incsearch " ...dynamically as they are typed.
 nmap <silent> <leader>n :silent :nohlsearch<CR>
 
 " buffer switching/management
-map <Right> :bnext<CR>
-imap <Right> <ESC>:bnext<CR>
-map <Left> :bprev<CR>
-imap <Left> <ESC>:bprev<CR>
+map <silent> <Down> :bnext<CR>
+imap <silent> <Down> <ESC>:bnext<CR>
+map <silent> <Up> :bprev<CR>
+imap <silent> <Up> <ESC>:bprev<CR>
 " Del is kind of useless on OS X but I'll leave it
 map <Del> :bd<CR>
+
+" tab switching
+map <silent> <Left> :tabp<CR>
+imap <silent> <Left> <ESC>:tabp<CR>
+map <silent> <Right> :tabn<CR>
+imap <silent> <Right> <ESC>:tabn<CR>
+map <S-Left> :tabfirst<CR>
+imap <S-Left> <ESC>:tabfirst<CR>
+map <S-Right> :tablast<CR>
+imap <S-Right> <ESC>:tablast<CR>
 
 " H and L normally go to the beginning and end of the screen
 map H ^
