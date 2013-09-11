@@ -44,6 +44,8 @@ map <silent> <Left> :tabp<CR>
 imap <silent> <Left> <ESC>:tabp<CR>
 map <silent> <Right> :tabn<CR>
 imap <silent> <Right> <ESC>:tabn<CR>
+
+" terminal must send \033[1;2D and \033[1;2C for left/right
 map <S-Left> :tabfirst<CR>
 imap <S-Left> <ESC>:tabfirst<CR>
 map <S-Right> :tablast<CR>
