@@ -8,7 +8,7 @@
         excludesfile = ~/.gitignore
 [user]
 	name = Charles T. Ahn
-	email = cahn@charlesahn.com
+	email = charles@likeness.com
 [branch]
 	autosetupmerge = true
 [color]
@@ -16,6 +16,8 @@
 	status = auto
 	branch = auto
 	interactive = auto
+[push]
+        default = upstream
 [merge]
 	tool = opendiff
 	summary = true
