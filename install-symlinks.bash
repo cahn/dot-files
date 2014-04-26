@@ -4,22 +4,25 @@
 git submodule init
 git submodule update
 
-ln -s ${PWD}/.profile ~/.profile
-ln -s ${PWD}/.bashrc ~/.bashrc
-ln -s ${PWD}/.bash_profile ~/.bash_profile
+ln -sh ${PWD}/.profile ~/.profile
+ln -sh ${PWD}/.bashrc ~/.bashrc
+ln -sh ${PWD}/.bash_profile ~/.bash_profile
 
-ln -s ${PWD}/.git-completion.bash ~/.git-completion.bash
-ln -s ${PWD}/.gitconfig ~/.gitconfig
-ln -s ${PWD}/.gitignore ~/.gitignore
+ln -sh ${PWD}/.git-completion.bash ~/.git-completion.bash
+ln -sh ${PWD}/.gitconfig ~/.gitconfig
+ln -sh ${PWD}/.gitignore ~/.gitignore
 
-ln -s ${PWD}/.vimrc ~/.vimrc
+ln -sh ${PWD}/.vimrc ~/.vimrc
 
 mkdir ~/.vim
 
 # install clang_complete
-ln -s ${PWD}/clang_complete/bin ~/.vim/bin
-ln -s ${PWD}/clang_complete/doc ~/.vim/doc
-ln -s ${PWD}/clang_complete/plugin ~/.vim/plugin
+ln -sh ${PWD}/clang_complete/bin ~/.vim/bin
+ln -sh ${PWD}/clang_complete/doc ~/.vim/doc
+ln -sh ${PWD}/clang_complete/plugin ~/.vim/plugin
+
+# install vim-lucius
+ln -sh ${PWD}/vim-lucius ~/.vim/plugin/vim-lucius
 
 # install bundle directory
-ln -s ${PWD}/vim_plugins ~/.vim/bundle
+ln -sh ${PWD}/vim_plugins ~/.vim/bundle
