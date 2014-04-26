@@ -4,5 +4,19 @@ Useful Commands:
   openssl enc -aes-256-cbc -a -salt -in file.txt -out file.enc
   openssl enc -d -aes-256-cbc -a -in file.enc
   fs_usage -w -f filesys mdworker | egrep \"open\"
-  patch -p1 < ~/patch.txt
   ls ~/.ssh/*.pub | xargs -L 1 ssh-keygen -l -f
+
+Clone the audios:
+  ffmpeg -i inputfile.flv -f mp3 -vn -acodec copy ouputfile.mp3
+Single pass, CRF:
+  ffmpeg -i inputfile -c:v libx264 -preset veryslow -profile:v main -tune film -sws_flags lanczos -c:a copy -s 1152x648 [-crf n] -threads 0 -y temp.mp4
+Double pass, CBR:
+  ffmpeg -i inputfile -f rawvideo -c:v libx264 -b:v 1600k -preset veryslow -profile:v main -tune film -sws_flags lanczos -pass 1 -c:a copy -s 1152x648 -threads 0 -y /dev/null
+  ffmpeg -i inputfile -c:v libx264 -b:v 1600k -preset veryslow -profile:v main -tune film -sws_flags lanczos -pass 2 -c:a copy -s 1152x648 -threads 0 -y temp.mp4
+
+Break the disks:
+  sudo pmset -c disksleep 
+
+The reverse tunnel:
+  ssh -R 5000:localhost:22 foo@bar
+  scp -P 5000 foo foo@bar:~/foo
