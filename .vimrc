@@ -61,3 +61,7 @@ cab o find
 
 " Plugins
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/bundle/vim-lucius
+
+colorscheme lucius
+LuciusBlackHighContrast

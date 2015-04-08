@@ -26,3 +26,7 @@ ln -sh ${PWD}/vim-lucius ~/.vim/plugin/vim-lucius
 
 # install bundle directory
 ln -sh ${PWD}/vim_plugins ~/.vim/bundle
+
+mkdir ~/.ssh
+touch ~/.ssh/authorized_keys
+sudo chown root ~/.ssh/*
