@@ -18,6 +18,8 @@
 	interactive = auto
 [push]
         default = upstream
+[pull]
+        ff = only
 [merge]
 	tool = opendiff
 	summary = true
