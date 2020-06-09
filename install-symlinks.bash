@@ -4,9 +4,10 @@
 git submodule init
 git submodule update
 
-ln -sh ${PWD}/.profile ~/.profile
-ln -sh ${PWD}/.bashrc ~/.bashrc
-ln -sh ${PWD}/.bash_profile ~/.bash_profile
+#ln -sh ${PWD}/.profile ~/.profile
+#ln -sh ${PWD}/.bashrc ~/.bashrc
+#ln -sh ${PWD}/.bash_profile ~/.bash_profile
+ln -sh ${PWD}/.zshrc ~/.zshrc
 
 ln -sh ${PWD}/.git-completion.bash ~/.git-completion.bash
 ln -sh ${PWD}/.gitconfig ~/.gitconfig
