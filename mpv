@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+# Use with Automator: Run Shell Script, input passed as arguments
+
+# use absolute paths as:
+#   - the user's profile is not loaded
+#   - ~ is not resolved
+local MPV
+MPV=/opt/homebrew/bin/mpv
+
+# reroute input and output to allow the automator script to terminate early
+if [[ $# -eq 0 ]]; then
+  ${MPV} --force-window --idle < /dev/null > /dev/null 2>&1 &
+else
+  ${MPV} $@ < /dev/null > /dev/null 2>&1 &
+fi

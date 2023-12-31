@@ -24,14 +24,16 @@ RPS1='${return_code}'
 # setup aliases
 alias rm='rm -i'
 alias ls="ls -G -A -h"
-alias vim="vim -i NONE"
-alias man="man -M $MANPATH:/opt/local/man"
 alias git-graph="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%H%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'"
 alias git-ff-merge="git merge --ff-only \@\{u\}"
 
+# less is very aggressive about replacing symlinks
+export LESSHISTFILE=/dev/null
+export LESSHISTSIZE=0
+
 # link to null
-ln -sf /dev/null ~/.zsh_history
-ln -sf /dev/null ~/.bash_history
-ln -sf /dev/null ~/.lesshst
-ln -sf /dev/null ~/.gdb_history
-ln -sf /dev/null ~/.gnuplot_history
+ln -shf /dev/null ~/.zsh_history
+ln -shf /dev/null ~/.viminfo
+ln -shf /dev/null ~/.gdb_history
+ln -shf /dev/null ~/.gnuplot_history
+

@@ -1,3 +1,24 @@
+Included Programs which are ancient:
+  rsync
+  tmux
+  vim
+  grep
+  man
+  curl
+
+Potentially worth updating:
+  openssh
+  zsh
+
+Install:
+  mpv
+  ffmpeg
+
+Git Completions:
+  /usr/share/git-core/git-completion.zsh
+  e.g. /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.zsh
+
+
 Useful Commands:
   sips -s format jpeg --out test.jpg crushedscan.png
   for f in *htm ; do mv \$f \`basename \$f htm\`html; done
@@ -16,6 +37,9 @@ Double pass, CBR:
 
 Break the disks:
   sudo pmset -c disksleep 
+
+Homebrew Path Extensions:
+  /opt/homebrew/bin/brew shellenv
 
 The reverse tunnel:
   ssh -R 5000:localhost:22 foo@bar
