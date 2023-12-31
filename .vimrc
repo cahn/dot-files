@@ -1,3 +1,5 @@
+set viminfofile=NONE
+
 " Ian's vim settings
 set autoindent " always set autoindenting on
 set smartindent
